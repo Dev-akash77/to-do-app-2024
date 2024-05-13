@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 63.5%;
+    overflow: hidden;
+}
+body{
+    overflow: hidden;
+}
+.main_bg{
+    background-image: url("/todo.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+    display: grid;
+    place-content: center;
+    width: 100vw;
+}
+.to_do_list_main{
+    height: 55rem;
+    width: 45rem;
+    background-color: #222831;
+    border-radius: 1rem;
+    box-shadow: rgba(0, 0, 0, 0.4) 0px 2px 4px, rgba(0, 0, 0, 0.3) 0px 7px 13px -3px, rgba(0, 0, 0, 0.2) 0px -3px 0px inset;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.to_do_list_main h1{
+    margin-top: 2rem;
+    font-size: 3rem;
+    color: white;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.inp_add{
+    display: flex;
+    align-items: center;margin-top: 2rem;
+    justify-content: center;
+    gap:1rem;
+}
+.inp_add input{
+    padding-left: 1rem;
+    border: none;
+    outline: none;
+    height:4rem;
+    width: 37rem;
+    border-radius: 2rem;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+}
+.add{
+    height: 4rem;
+    width:20%;
+    background-color:#ff044f;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 2rem;
+    cursor: pointer;
+    box-shadow: rgba(100, 100, 100, 0.25) 0px 13px 27px -5px, rgba(100, 100, 100, 0.3) 0px 8px 16px -8px;
+}
+.all_data{
+    height: 70%;
+    overflow-y: auto;
+    padding: 1rem 0;
+    margin-top: 2rem;
+    width: 90%;
+}
+.all_data{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    position: relative;
+}
+.data_main{
+    color: white;
+    display: flex;
+    gap: .5rem;
+}
+.circle{
+    font-size: 2rem;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.fa-circle-check{
+    color: #ff044f;
+}
+.para{
+    font-size: 2rem;
+    margin-left: 1rem;
+}
+.fa-trash{
+    font-size: 2rem;
+    position: absolute;
+    right:2rem;
+    cursor: pointer;
+    transition: .2s ease;
+}
+.fa-trash:hover{
+    color: #ff044f;
+}
+.stroke{
+    text-decoration:line-through;
+    color: #ff044f;
+}
+@media(max-width:536px){
+    html{
+        font-size: 61%;
+    }
+}
+@media(max-width:475px){
+    html{
+        font-size: 55%;
+    }
+}
+@media(max-width:447px){
+    html{
+        font-size: 50%;
+    }
+}
+@media(max-width:380px){
+    html{
+        font-size:40%;
+    }
+}
+@media(max-width:313px){
+    html{
+        font-size:30%;
+    }
+}
+@media(max-width:236px){
+    html{
+        font-size: 20%;
+    }
+}
